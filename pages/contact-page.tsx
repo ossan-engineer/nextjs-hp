@@ -1,6 +1,4 @@
-import React from 'react';
-
-const Contact = () => {
+const Contact: React.FC = () => {
   return <div>CONTACT</div>;
 };
 
