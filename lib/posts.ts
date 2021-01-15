@@ -8,3 +8,25 @@ export const getAllPostData = async () => {
   const posts = await res.json();
   return posts;
 };
+
+export const getAllPostIds = async () => {
+  const res = await fetch(API_URL);
+  const posts = await res.json();
+
+  return posts.map(({ id }) => {
+    return {
+      params: {
+        id: String(id),
+      },
+    };
+  });
+};
+
+export const getPostData = async (id: number) => {
+  const res = await fetch(`${API_URL}/${id}`);
+  const post = await res.json();
+
+  return {
+    post,
+  };
+};
