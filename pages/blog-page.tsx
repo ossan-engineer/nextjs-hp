@@ -1,7 +1,6 @@
-import Layout from '../components/Layout';
-import PostItem from '../components/PostItem';
-import type { Post } from '../components/PostItem';
-import { getAllPostData } from '../lib/posts';
+import Layout from 'components/Layout';
+import PostItem, { Post } from 'components/PostItem';
+import { getAllPostData } from 'lib/posts';
 
 type Props = {
   posts: Post[];

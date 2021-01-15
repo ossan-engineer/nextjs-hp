@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import Layout from '../../components/Layout';
-import { Post } from '../../components/PostItem';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import Layout from 'components/Layout';
+import { Post } from 'components/PostItem';
+import { getAllPostIds, getPostData } from 'lib/posts';
 
 type Props = {
   post?: Post;
